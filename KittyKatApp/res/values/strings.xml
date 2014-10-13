@@ -6,5 +6,7 @@
     <string name="action_settings">Settings</string>
     <string name="kitty_kat_app">Kitty Kat App</string>
     <string name="click_me">Click Me</string>
+    <string name="wikipedia_link">Wikipedia Cats</string>
+    <string name="cat_img_description">Image of a Cat</string>
 
 </resources>

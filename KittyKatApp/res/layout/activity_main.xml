@@ -9,13 +9,34 @@
     tools:context="com.example.kittykatapp.MainActivity" >
 
     <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="14dp"
+        android:clickable="true"
+        android:text="@string/wikipedia_link" />
+
+    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp"
+        android:layout_marginTop="23dp"
         android:text="@string/kitty_kat_app" />
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:contentDescription="@string/cat_img_description"
+        android:scaleType="fitCenter"
+        android:src="@drawable/kitty" />
 
     <Button
         android:id="@+id/button1"
@@ -23,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="27dp"
+        android:layout_marginTop="14dp"
         android:text="@string/click_me" />
 
     <EditText
@@ -32,21 +53,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/button1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
-        android:inputType="text" >
-
-        <requestFocus />
-    </EditText>
-
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="20dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/kitty" />
+        android:inputType="text" />
 
 </RelativeLayout>

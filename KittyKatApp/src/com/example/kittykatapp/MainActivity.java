@@ -2,6 +2,9 @@ package com.example.kittykatapp;
 
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.ActionBarActivity;
+import android.content.Intent;
+import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
@@ -11,6 +14,7 @@ import android.view.View.OnTouchListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
@@ -26,8 +30,10 @@ public class MainActivity extends ActionBarActivity {
 		text = (EditText) findViewById(R.id.editText1);
 		Button button = (Button) findViewById(R.id.button1);
 		ImageButton image = (ImageButton) findViewById(R.id.imageButton1);
+		TextView link = (TextView) findViewById(R.id.textView2);
 
 		button.setOnClickListener(new ButtonHandler());
+		link.setOnClickListener( new LinkHandler() );
 
 		GestureHandler handler = new GestureHandler();
 		final GestureDetectorCompat detector = new GestureDetectorCompat(this,
@@ -48,11 +54,22 @@ public class MainActivity extends ActionBarActivity {
 		}
 	}
 
+	class LinkHandler implements OnClickListener{
+		public void onClick(View v) {
+			Intent intent = new Intent(Intent.ACTION_VIEW);
+			intent.setData(Uri.parse("http://en.wikipedia.org/wiki/Cat"));
+			startActivity(intent);  
+		}
+	}
+
 	class GestureHandler extends SimpleOnGestureListener {
 		public boolean onFling(MotionEvent event1, MotionEvent event2,
 				float velocityX, float velocityY) {
 			Toast.makeText(MainActivity.this, "Purrr", Toast.LENGTH_SHORT)
 					.show();
+			MediaPlayer mPlayer;
+			mPlayer = MediaPlayer.create(MainActivity.this, R.raw.purr);
+			mPlayer.start();
 			return true;
 		}
 
