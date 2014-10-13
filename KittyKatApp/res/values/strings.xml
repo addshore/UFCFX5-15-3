@@ -8,5 +8,9 @@
     <string name="click_me">Click Me</string>
     <string name="wikipedia_link">Wikipedia Cats</string>
     <string name="cat_img_description">Image of a Cat</string>
+    <string name="image_me">Image me</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
 
 </resources>

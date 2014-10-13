@@ -28,11 +28,13 @@ public class MainActivity extends ActionBarActivity {
 		setContentView(R.layout.activity_main);
 
 		text = (EditText) findViewById(R.id.editText1);
-		Button button = (Button) findViewById(R.id.button1);
+		Button buttonClickMe = (Button) findViewById(R.id.button1);
+		Button buttonImageMe = (Button) findViewById(R.id.button2);
 		ImageButton image = (ImageButton) findViewById(R.id.imageButton1);
 		TextView link = (TextView) findViewById(R.id.textView2);
 
-		button.setOnClickListener(new ButtonHandler());
+		buttonClickMe.setOnClickListener(new ButtonHandler());
+		buttonImageMe.setOnClickListener(new ButtonImgHandler());
 		link.setOnClickListener( new LinkHandler() );
 
 		GestureHandler handler = new GestureHandler();
@@ -51,6 +53,14 @@ public class MainActivity extends ActionBarActivity {
 		public void onClick(View view) {
 			count++;
 			text.setText(count + " Meeow");
+		}
+	}
+
+	class ButtonImgHandler implements OnClickListener {
+		public void onClick(View view) {
+			Intent intent;
+    		intent = new Intent(MainActivity.this, ImageActivity.class);
+    		startActivity(intent);
 		}
 	}
 
