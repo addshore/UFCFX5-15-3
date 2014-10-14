@@ -22,7 +22,51 @@
         android:text="@string/filmTitleOne"
         android:onClick ="onClickmyTextView"
         android:clickable="true" />
-   
+
+<TextView
+        android:id="@+id/filmTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filmOne"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/filmTitleTwo"
+        android:onClick ="onClickmyTextView"
+        android:clickable="true" />
+
+<TextView
+        android:id="@+id/filmThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filmTwo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/filmTitleThree"
+        android:onClick ="onClickmyTextView"
+        android:clickable="true" />
+
+<TextView
+        android:id="@+id/filmFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filmThree"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/filmTitleFour"
+        android:onClick ="onClickmyTextView"
+        android:clickable="true" />
+
+<TextView
+        android:id="@+id/filmFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/filmFour"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/filmTitleFive"
+        android:onClick ="onClickmyTextView"
+        android:clickable="true" />
+
    <Button
          android:id="@+id/button1"
          android:layout_width="wrap_content"

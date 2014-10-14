@@ -5,6 +5,10 @@
     <string name="hello_world">Hello world!</string>
     <string name="afi_movies">AFI Movies</string>
     <string name="filmTitleOne"></string>
+    <string name="filmTitleTwo"></string>
+    <string name="filmTitleThree"></string>
+    <string name="filmTitleFour"></string>
+    <string name="filmTitleFive"></string>
     <string name="selectRandomFilm">Select Random Film</string>
 
 </resources>
