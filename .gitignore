@@ -1,4 +1,5 @@
 *.zip
+*.apk
 
 appcompat_v7
 appcompat_v7/*
